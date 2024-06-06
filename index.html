@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link rel="icon" type="image/x-icon" href="../ToDoPng.png" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../StyleSheet/main.css" />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome's css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img src="../ToDoPng.png" alt="logo" class="logo" />
+      <h2 class="app-name"><span style="color: #fff">TODO</span> LIST</h2>
+    </header>
+    <div class="wrapper">
+      <div class="task-input">
+        <img src="../bars-icon.svg" alt="" />
+        <input type="text" placeholder="Add a new task" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span id="all" class="active">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button id="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box">
+        <!-- Our tasks placed here with help of innerHtml -->
+      </ul>
+    </div>
+    <script src="../JavaScript/app.js"></script>
+  </body>
+</html>
